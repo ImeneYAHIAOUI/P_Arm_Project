@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.5.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+<project source="3.7.1" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.7.1(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -9,9 +9,11 @@
       <a name="incoming" val="1"/>
     </tool>
     <tool name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="radix" val="10unsigned"/>
     </tool>
@@ -47,54 +49,10 @@
     <tool name="OR Gate">
       <a name="size" val="30"/>
     </tool>
-    <tool name="PLA">
-      <a name="table" val=""/>
-    </tool>
   </lib>
-  <lib desc="#Plexers" name="2">
-    <tool name="Multiplexer">
-      <a name="enable" val="false"/>
-    </tool>
-    <tool name="Demultiplexer">
-      <a name="enable" val="false"/>
-    </tool>
-  </lib>
+  <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4">
-    <tool name="D Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="T Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="J-K Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="S-R Flip-Flop">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Counter">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Shift Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="Random">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="RAM">
-      <a name="appearance" val="logisim_evolution"/>
-    </tool>
-    <tool name="ROM">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="contents">addr/data: 8 8
-0
-</a>
-    </tool>
-  </lib>
+  <lib desc="#Memory" name="4"/>
   <lib desc="#I/O" name="5"/>
   <lib desc="#HDL-IP" name="6">
     <tool name="VHDL Entity">
@@ -161,9 +119,6 @@ end TCL_Generic;
   <lib desc="#Base" name="8">
     <tool name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="text" val=""/>
-      <a name="valign" val="base"/>
     </tool>
   </lib>
   <lib desc="#BFH-Praktika" name="9"/>
@@ -183,16 +138,10 @@ end TCL_Generic;
     <tool lib="8" name="Edit Tool"/>
     <tool lib="8" name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
-      <a name="halign" val="center"/>
-      <a name="text" val=""/>
-      <a name="valign" val="base"/>
     </tool>
     <sep/>
+    <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="appearance" val="NewPins"/>
-    </tool>
-    <tool lib="0" name="Pin">
-      <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
@@ -203,55 +152,139 @@ end TCL_Generic;
   <circuit name="Opcode_Decoder">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="Opcode_Decoder"/>
-    <a name="circuitnamedboxfixedsize" val="false"/>
-    <a name="circuitvhdlpath" val=""/>
-    <a name="clabel" val=""/>
-    <a name="clabelfont" val="SansSerif bold 16"/>
-    <a name="clabelup" val="east"/>
-    <comp lib="0" loc="(240,140)" name="Pin">
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(120,110)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Opcode"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(190,110)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="6"/>
+      <a name="incoming" val="6"/>
+    </comp>
+    <comp lib="0" loc="(700,160)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Shift"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,220)" name="Pin">
+    <comp lib="0" loc="(700,250)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Data_Processing"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,310)" name="Pin">
+    <comp lib="0" loc="(700,360)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Load_Store"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,390)" name="Pin">
+    <comp lib="0" loc="(700,460)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="SP_Address"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(240,510)" name="Pin">
+    <comp lib="0" loc="(700,570)" name="Pin">
+      <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Conditional"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(80,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="label" val="Opcode"/>
-      <a name="width" val="6"/>
+    <comp lib="1" loc="(580,160)" name="AND Gate">
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+      <a name="size" val="30"/>
     </comp>
-    <comp lib="8" loc="(413,150)" name="Text">
-      <a name="text" val="Shift, add, sub, mov"/>
+    <comp lib="1" loc="(610,250)" name="AND Gate">
+      <a name="inputs" val="6"/>
+      <a name="negate0" val="true"/>
+      <a name="negate2" val="true"/>
+      <a name="negate3" val="true"/>
+      <a name="negate4" val="true"/>
+      <a name="negate5" val="true"/>
+      <a name="size" val="70"/>
     </comp>
-    <comp lib="8" loc="(431,319)" name="Text">
-      <a name="text" val="Load/Store"/>
+    <comp lib="1" loc="(610,360)" name="AND Gate">
+      <a name="inputs" val="4"/>
+      <a name="negate1" val="true"/>
+      <a name="negate2" val="true"/>
+      <a name="size" val="70"/>
     </comp>
-    <comp lib="8" loc="(436,399)" name="Text">
-      <a name="text" val="SP Address"/>
+    <comp lib="1" loc="(610,460)" name="AND Gate">
+      <a name="inputs" val="4"/>
+      <a name="negate1" val="true"/>
+      <a name="size" val="70"/>
     </comp>
-    <comp lib="8" loc="(475,519)" name="Text">
+    <comp lib="1" loc="(610,570)" name="AND Gate">
+      <a name="inputs" val="4"/>
+      <a name="negate2" val="true"/>
+      <a name="size" val="70"/>
+    </comp>
+    <comp lib="8" loc="(905,579)" name="Text">
       <a name="text" val="Conditional branch"/>
     </comp>
-    <comp lib="8" loc="(505,230)" name="Text">
+    <comp lib="8" loc="(917,367)" name="Text">
+      <a name="text" val="Load/Store"/>
+    </comp>
+    <comp lib="8" loc="(920,465)" name="Text">
+      <a name="text" val="SP Address"/>
+    </comp>
+    <comp lib="8" loc="(935,258)" name="Text">
       <a name="text" val="Data Processing"/>
     </comp>
+    <comp lib="8" loc="(943,164)" name="Text">
+      <a name="text" val="Shift, add, sub, mov"/>
+    </comp>
+    <wire from="(120,110)" to="(190,110)"/>
+    <wire from="(200,130)" to="(200,150)"/>
+    <wire from="(200,150)" to="(200,220)"/>
+    <wire from="(200,150)" to="(540,150)"/>
+    <wire from="(200,220)" to="(200,330)"/>
+    <wire from="(200,220)" to="(530,220)"/>
+    <wire from="(200,330)" to="(200,430)"/>
+    <wire from="(200,330)" to="(540,330)"/>
+    <wire from="(200,430)" to="(200,540)"/>
+    <wire from="(200,430)" to="(540,430)"/>
+    <wire from="(200,540)" to="(540,540)"/>
+    <wire from="(210,130)" to="(210,170)"/>
+    <wire from="(210,170)" to="(210,230)"/>
+    <wire from="(210,170)" to="(540,170)"/>
+    <wire from="(210,230)" to="(210,350)"/>
+    <wire from="(210,230)" to="(540,230)"/>
+    <wire from="(210,350)" to="(210,450)"/>
+    <wire from="(210,350)" to="(530,350)"/>
+    <wire from="(210,450)" to="(210,560)"/>
+    <wire from="(210,450)" to="(530,450)"/>
+    <wire from="(210,560)" to="(540,560)"/>
+    <wire from="(220,130)" to="(220,240)"/>
+    <wire from="(220,240)" to="(220,370)"/>
+    <wire from="(220,240)" to="(530,240)"/>
+    <wire from="(220,370)" to="(220,390)"/>
+    <wire from="(220,370)" to="(530,370)"/>
+    <wire from="(220,390)" to="(220,470)"/>
+    <wire from="(220,390)" to="(540,390)"/>
+    <wire from="(220,470)" to="(220,580)"/>
+    <wire from="(220,470)" to="(540,470)"/>
+    <wire from="(220,580)" to="(530,580)"/>
+    <wire from="(230,130)" to="(230,260)"/>
+    <wire from="(230,260)" to="(230,490)"/>
+    <wire from="(230,260)" to="(530,260)"/>
+    <wire from="(230,490)" to="(230,600)"/>
+    <wire from="(230,490)" to="(540,490)"/>
+    <wire from="(230,600)" to="(540,600)"/>
+    <wire from="(240,130)" to="(240,270)"/>
+    <wire from="(240,270)" to="(240,640)"/>
+    <wire from="(240,270)" to="(530,270)"/>
+    <wire from="(250,130)" to="(250,280)"/>
+    <wire from="(250,280)" to="(250,720)"/>
+    <wire from="(250,280)" to="(530,280)"/>
+    <wire from="(580,160)" to="(700,160)"/>
+    <wire from="(610,250)" to="(700,250)"/>
+    <wire from="(610,360)" to="(700,360)"/>
+    <wire from="(610,460)" to="(700,460)"/>
+    <wire from="(610,570)" to="(700,570)"/>
   </circuit>
 </project>
