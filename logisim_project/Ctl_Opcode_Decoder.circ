@@ -223,7 +223,6 @@ end TCL_Generic;
       <a name="negate2" val="true"/>
       <a name="size" val="70"/>
     </comp>
-    <comp lib="3" loc="(90,480)" name="Shifter"/>
     <comp lib="8" loc="(905,579)" name="Text">
       <a name="text" val="Conditional branch"/>
     </comp>
@@ -263,16 +262,16 @@ end TCL_Generic;
     <wire from="(220,130)" to="(220,240)"/>
     <wire from="(220,240)" to="(220,370)"/>
     <wire from="(220,240)" to="(530,240)"/>
-    <wire from="(220,370)" to="(220,390)"/>
+    <wire from="(220,370)" to="(220,470)"/>
     <wire from="(220,370)" to="(530,370)"/>
-    <wire from="(220,390)" to="(220,470)"/>
-    <wire from="(220,390)" to="(540,390)"/>
     <wire from="(220,470)" to="(220,580)"/>
     <wire from="(220,470)" to="(540,470)"/>
     <wire from="(220,580)" to="(530,580)"/>
     <wire from="(230,130)" to="(230,260)"/>
-    <wire from="(230,260)" to="(230,490)"/>
+    <wire from="(230,260)" to="(230,390)"/>
     <wire from="(230,260)" to="(530,260)"/>
+    <wire from="(230,390)" to="(230,490)"/>
+    <wire from="(230,390)" to="(540,390)"/>
     <wire from="(230,490)" to="(230,600)"/>
     <wire from="(230,490)" to="(540,490)"/>
     <wire from="(230,600)" to="(540,600)"/>
