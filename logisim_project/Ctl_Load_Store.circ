@@ -4,22 +4,21 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="appear" val="center"/>
+      <a name="facing" val="west"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="1"/>
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+      <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
       <a name="appearance" val="classic"/>
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
       <a name="radix" val="10unsigned"/>
     </tool>
     <tool name="Tunnel">
-      <a name="facing" val="east"/>
+      <a name="facing" val="south"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -29,6 +28,8 @@
     </tool>
     <tool name="Constant">
       <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+      <a name="width" val="2"/>
     </tool>
     <tool name="Ground">
       <a name="facing" val="west"/>
@@ -316,17 +317,12 @@ end type_architecture;
       <a name="label" val="C3"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="0" loc="(960,220)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="C1"/>
-    </comp>
     <comp lib="1" loc="(700,400)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
     <comp lib="1" loc="(990,300)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="2" loc="(1020,210)" name="Multiplexer"/>
     <comp lib="2" loc="(1130,140)" name="Multiplexer"/>
     <comp lib="2" loc="(1130,200)" name="Multiplexer"/>
     <comp lib="2" loc="(1130,260)" name="Multiplexer"/>
@@ -348,8 +344,6 @@ end type_architecture;
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Delay load and hold PC for 1 cycle for the RAM to send out requested data "/>
     </comp>
-    <wire from="(1000,230)" to="(1000,270)"/>
-    <wire from="(1020,210)" to="(1100,210)"/>
     <wire from="(1020,270)" to="(1020,300)"/>
     <wire from="(1020,270)" to="(1100,270)"/>
     <wire from="(1070,130)" to="(1100,130)"/>
@@ -412,11 +406,10 @@ end type_architecture;
     <wire from="(900,200)" to="(900,290)"/>
     <wire from="(900,200)" to="(990,200)"/>
     <wire from="(900,290)" to="(960,290)"/>
-    <wire from="(930,270)" to="(1000,270)"/>
-    <wire from="(930,270)" to="(930,310)"/>
     <wire from="(930,310)" to="(930,400)"/>
     <wire from="(930,310)" to="(960,310)"/>
-    <wire from="(960,220)" to="(990,220)"/>
+    <wire from="(990,200)" to="(990,210)"/>
+    <wire from="(990,210)" to="(1100,210)"/>
     <wire from="(990,300)" to="(1020,300)"/>
   </circuit>
 </project>
