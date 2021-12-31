@@ -208,6 +208,9 @@ end TCL_Generic;
     <a name="clabel" val=""/>
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="clabelup" val="east"/>
+    <comp lib="0" loc="(100,680)" name="Tunnel">
+      <a name="label" val="Enable"/>
+    </comp>
     <comp lib="0" loc="(1010,960)" name="Constant">
       <a name="facing" val="south"/>
       <a name="value" val="0x0"/>
@@ -377,7 +380,7 @@ end TCL_Generic;
       <a name="output" val="true"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="0" loc="(1660,40)" name="Pin">
+    <comp lib="0" loc="(1660,30)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="Enable"/>
     </comp>
@@ -526,6 +529,9 @@ end TCL_Generic;
       <a name="facing" val="south"/>
       <a name="label" val="RdA"/>
       <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(60,680)" name="Pin">
+      <a name="label" val="Enable"/>
     </comp>
     <comp lib="0" loc="(610,1310)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -840,8 +846,8 @@ end TCL_Generic;
     <wire from="(160,150)" to="(190,150)"/>
     <wire from="(1660,140)" to="(1660,240)"/>
     <wire from="(1660,240)" to="(1660,340)"/>
+    <wire from="(1660,30)" to="(1660,50)"/>
     <wire from="(1660,340)" to="(1660,450)"/>
-    <wire from="(1660,40)" to="(1660,50)"/>
     <wire from="(1660,450)" to="(1660,550)"/>
     <wire from="(1660,50)" to="(1660,140)"/>
     <wire from="(1660,550)" to="(1660,640)"/>
@@ -999,6 +1005,7 @@ end TCL_Generic;
     <wire from="(580,980)" to="(590,980)"/>
     <wire from="(580,990)" to="(580,1000)"/>
     <wire from="(580,990)" to="(590,990)"/>
+    <wire from="(60,680)" to="(100,680)"/>
     <wire from="(610,1280)" to="(610,1310)"/>
     <wire from="(610,150)" to="(680,150)"/>
     <wire from="(630,1120)" to="(660,1120)"/>
