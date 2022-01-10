@@ -1,0 +1,3 @@
+Instruction[16] Stack_Pointer[32] Enable[1] Store[1] Load[1] PC_Hold[1] Rmd[3] RAM_Addr[32] 
+xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0 0 0 0 000 00000000000000000000000000000000
+  
