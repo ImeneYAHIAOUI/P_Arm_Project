@@ -200,13 +200,34 @@ end TCL_Generic;
     <tool lib="1" name="OR Gate"/>
   </toolbar>
   <circuit name="Flags_APSR">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="Flags_APSR"/>
     <a name="circuitnamedboxfixedsize" val="false"/>
     <a name="circuitvhdlpath" val=""/>
     <a name="clabel" val=""/>
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="clabelup" val="south"/>
+    <appear>
+      <circ-anchor facing="east" height="6" width="6" x="257" y="57"/>
+      <circ-port height="10" pin="1700,110" width="10" x="255" y="55"/>
+      <circ-port height="8" pin="1490,900" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="1530,700" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="1550,820" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="170,590" width="8" x="46" y="76"/>
+      <rect fill="none" height="100" stroke="#000000" stroke-width="2" width="190" x="60" y="50"/>
+      <rect height="20" stroke="none" width="190" x="60" y="130"/>
+      <rect height="3" stroke="none" width="10" x="50" y="119"/>
+      <rect height="3" stroke="none" width="10" x="50" y="99"/>
+      <rect height="4" stroke="none" width="10" x="250" y="58"/>
+      <rect height="4" stroke="none" width="10" x="50" y="58"/>
+      <rect height="4" stroke="none" width="10" x="50" y="78"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="245" y="64">Flags_Out</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="64" y="66">Update_Mask</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="104">Clk</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="124">Rst</text>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="67" y="84">Flags_In</text>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="155" y="144">Flags_APSR</text>
+    </appear>
     <comp lib="0" loc="(1000,1120)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="3"/>
