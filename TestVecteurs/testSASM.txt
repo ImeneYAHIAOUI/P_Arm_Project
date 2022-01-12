@@ -1,0 +1,28 @@
+Instruction[16] Enable[1] Carry[1] Imm32_Enable[1] Imm5[5] Imm32[32] ALU_Opcode[4] Rm[3] Rn[3] Rd[3] Flags_Update_Mask[4]
+
+
+# LSL
+0000001011000010 1 0 0 01011 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0010 xxx 000 010 1110
+0000011010011110 1 0 0 11010 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0010 xxx 011 110 1110
+
+# LSR
+0000111100101111 1 0 0 11100 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0011 xxx 101 111 1110
+0000111000110010 1 0 0 11000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0011 xxx 110 010 1110
+# ASR
+0001001000011010 1 0 0 01000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0100 xxx 011 010 1111
+0001011011101110 1 0 0 11011 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0100 xxx 101 110 1111
+# ADD
+0001100101111100 1 0 0 xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0101 101 111 100 1111
+0001100100101100 1 0 0 xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0101 100 101 100 1111
+# SUB
+0001101011000000 1 1 0 xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0110 011 000 000 1111
+0001101111001110 1 1 0 xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0110 111 001 110 1111
+# ADDIMM
+0001110010011110 1 0 1 10010 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0101 xxx 011 110 1111
+0001110010000011 1 0 1 10010 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0101 xxx 000 011 1111
+# SUBIMM
+0001111100011111 1 1 1 11100 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0110 xxx 011 111 1111
+0001111101010100 1 1 1 11101 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 0110 xxx 010 100 1111
+# MOVIMM
+0010000001111101 1 0 1 xxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxx xxx xxx 000 1100
+
